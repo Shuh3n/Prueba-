@@ -89,11 +89,7 @@ public class Funciones {
 		}
 		return cont;
 	}
-	
 
-	
-	
-	
 	
 	public static void imprimir(String mensaje) {
 		JOptionPane.showMessageDialog(null,mensaje);
@@ -129,17 +125,5 @@ public class Funciones {
 		}
 		Funciones.imprimir(msj);
 	}
-	public static void imprimirArrayList(ArrayList<Integer> miA) {
-		String msj= "[";
-		for(int i = 0 ; i< miA.size() ;  i++) {
-			int dato = miA.get(i);
-			msj+=  dato;
-			if(i+1<miA.size()) {
-				msj+= ", ";
-			}
-			
-		}
-		msj+= "]";
-		Funciones.imprimir(msj);
-	}
+
 }
